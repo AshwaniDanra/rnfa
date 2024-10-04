@@ -1,5 +1,5 @@
 const { hashPassword, matchPassword } = require("../helpers/authHelper");
-const { usersModel } = require("../modals/UserModel");
+const { usersModel } = require("../modals/userModel");
 const JWT = require("jsonwebtoken");
 //New user registration  controller
 const newUserRegister = async (req, res) => {
