@@ -14,7 +14,12 @@ dbConnection();
 //Routes
 
 app.use("/api/v1/", require("./routes/usersRoute"));
-
+app.get("/",(req,res)=>{
+  res.status(200).send({
+   "success": true, 
+    "message":"Server deployed Online"
+  })
+})
 //PORT
 const PORT = process.env.PORT || 3000;
 //Creating Server
